@@ -10,7 +10,8 @@ npm run start:clean
 # Launch web (optional)
 npm run web
 npm test
-```
+=======
+# Dependency update runbook
 
 If npm still complains, try the temporary workaround:
 
