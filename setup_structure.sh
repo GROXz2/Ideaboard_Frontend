@@ -6,10 +6,10 @@ set -euo pipefail
 echo "📁 Creando estructura de carpetas…"
 mkdir -p src/{theme,components,components/Modals,navigation,state/slices,client/mocks,types,utils,screens}
 
-# --- theme.ts ---
-echo "📝 Generando src/theme/theme.ts…"
-cat > src/theme/theme.ts <<'TS'
-// /src/theme/theme.ts
+# --- theme.tsx ---
+echo "📝 Generando src/theme/theme.tsx…"
+cat > src/theme/theme.tsx <<'TS'
+// /src/theme/theme.tsx
 import React, { createContext, useContext, useMemo, type ReactNode } from 'react';
 import { Platform, type ViewStyle } from 'react-native';
 
@@ -374,6 +374,6 @@ TSX
 echo "🧹 Añadiendo .gitkeep a carpetas vacías…"
 find src -type d -empty -exec touch {}/.gitkeep \;
 
-echo "✅ Scaffold listo: carpetas + src/theme/theme.ts + src/components/NodeView.tsx"
+echo "✅ Scaffold listo: carpetas + src/theme/theme.tsx + src/components/NodeView.tsx"
 echo "Siguiente paso sugerido:"
 echo "  git add . && git commit -m 'chore: scaffold structure with theme + NodeView' && git push"
