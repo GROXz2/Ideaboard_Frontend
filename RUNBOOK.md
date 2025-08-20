@@ -1,12 +1,12 @@
-# Dependency update runbook
+# Windows install runbook
 
-The following PowerShell commands refresh dependencies and resolve peer conflicts.
+Use these PowerShell commands to reset dependencies and start the Expo app.
 
 ```powershell
-Remove-Item -Recurse -Force node_modules, package-lock.json
+npm run clean:win
 npm install
-npx expo install react-native-safe-area-context react-native-screens react-native-gesture-handler react-native-reanimated @expo/vector-icons
-npx expo start -c
+npm run postinstall:align
+npm run start:clean
 npm test
 ```
 
