@@ -7,6 +7,8 @@ npm run clean:win
 npm install
 npm run postinstall:align
 npm run start:clean
+# Launch web (optional)
+npm run web
 npm test
 ```
 

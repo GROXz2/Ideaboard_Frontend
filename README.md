@@ -15,7 +15,7 @@
 - **Navigation**: Bottom tabs + native stacks in `src/navigation/RootNavigator.tsx`.
 - **State**: Zustand slices combined in `src/state/store.ts`.
 - **Data**: Axios client (`src/client/Api.ts`) with optional mock server (`src/client/mocks/mockServer.ts`).
-- **Design System**: Tokens and theming in `src/theme/theme.ts`. Use `useTheme()`; avoid hardcoded colors or sizes.
+- **Design System**: Tokens and theming in `src/theme/theme.tsx`. Use `useTheme()`; avoid hardcoded colors or sizes.
 
 ## Canvas Internals
 Nodes render absolutely and edges are straight lines (`EdgeLayer`). Connect mode toggles edge creation.
