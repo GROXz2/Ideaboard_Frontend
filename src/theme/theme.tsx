@@ -1,4 +1,4 @@
-// /src/theme/theme.ts
+// /src/theme/theme.tsx
 import React, { createContext, useContext, useMemo, type ReactNode } from 'react';
 import { Platform, type ViewStyle } from 'react-native';
 

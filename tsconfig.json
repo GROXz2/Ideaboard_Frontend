@@ -1,18 +1,14 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
+    "target": "ES2020",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
     "strict": true,
-    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "baseUrl": ".",
     "paths": {
-      "*": ["*"],
-      "@components/*": ["components/*"],
-      "@screens/*": ["screens/*"],
-      "@state/*": ["state/*"],
-      "@client/*": ["client/*"],
-      "@theme/*": ["theme/*"],
-      "@utils/*": ["utils/*"],
-      "@types/*": ["types/*"]
+      "@/*": ["src/*"]
     }
-  },
-  "include": ["src"]
+  }
 }
