@@ -1,30 +1,23 @@
-# IdeaBoard AI
+# IdeaBoard
 
-## Getting Started
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Copy `.env.example` to `.env` and adjust values. Set `USE_MOCKS=true` to enable the in-memory mock server.
-3. Run the app:
-   ```bash
-   npm start
-   ```
+## Requisitos
+- Node.js LTS
+- Android SDK (para emulador)
 
-## Architecture Overview
-- **Navigation**: Bottom tabs + native stacks in `src/navigation/RootNavigator.tsx`.
-- **State**: Zustand slices combined in `src/state/store.ts`.
-- **Data**: Axios client (`src/client/Api.ts`) with optional mock server (`src/client/mocks/mockServer.ts`).
-- **Design System**: Tokens and theming in `src/theme/theme.ts`. Use `useTheme()`; avoid hardcoded colors or sizes.
+## Instalación limpia
+```bash
+rm -rf node_modules package-lock.json .expo .parcel-cache
+npm install
+npm run start
+```
 
-## Canvas Internals
-Nodes render absolutely and edges are straight lines (`EdgeLayer`). Connect mode toggles edge creation.
+## Scripts
+- `npm run web` – inicia en el navegador
+- `npm run android` – abre en Expo Go (SDK 53)
+- `npm run android:dev` – crea y ejecuta un development build
+- `npm run clean` – borra dependencias y reinstala
+- `npm run typecheck` – revisa tipos TypeScript
+- `npm run lint` – ejecuta ESLint
 
-## AI Run Flow
-Collect nodes where `content.activeForPrompt === true` and send to `/ai/run`. Display results in `AIRunResultModal`.
-
-## Templates Flow
-Templates list and detail screens with mock purchase and instantiate endpoints.
-
-## Kitchen Sink
-`DesignKitchenSink.tsx` renders tokens and components for visual QA.
+## Troubleshooting
+Pantalla en blanco? Verifica que `main` en `package.json` sea `expo-router/entry` y que las dependencias web (`react-dom`, `react-native-web`, `@expo/metro-runtime`) estén instaladas. Consulta la consola del navegador para más detalles.
