@@ -24,6 +24,7 @@
     "react-native-screens": "^3.31.1",
     "react-native-gesture-handler": "^2.16.2",
     "react-native-reanimated": "^3.10.1"
+
   },
   "devDependencies": {
     "@expo/cli": "^0.17.7",
