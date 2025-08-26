@@ -4,11 +4,6 @@
     "slug": "ideaboard",
     "version": "1.0.0",
     "orientation": "portrait",
-<<<<<<< HEAD
-    "sdkVersion": "53.0.0",
-    "platforms": ["ios", "android", "web"],
-    "assetBundlePatterns": ["**/*"]
-=======
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
@@ -29,6 +24,5 @@
     "web": {
       "bundler": "metro"
     }
->>>>>>> a1d33ad (WIP: Expo 53 scaffolding + UI components + config)
   }
 }
