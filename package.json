@@ -1,46 +1,26 @@
 {
-  "name": "ideaboard",
-  "version": "1.0.0",
+  "dependencies": {
+    "@expo/vector-icons": "^14.0.0",
+    "expo": "~50.0.0",
+    "expo-router": "^3.5.23",
+    "react": "18.2.0",
+    "react-native": "0.73.6",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-web": "~0.19.6",
+    "react-dom": "18.2.0",
+    "typescript": "^5.3.0",
+    "@types/react": "~18.2.45"
+  },
   "main": "index.js",
+  "name": "ideaboard",
+  "private": true,
   "scripts": {
-    "clean:win": "powershell -Command \"Remove-Item -Recurse -Force node_modules, package-lock.json\"",
-    "start:clean": "expo start -c",
-    "postinstall:align": "expo doctor --fix || true",
-    "web": "expo start --web",
-    "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "test": "jest"
+    "postinstall": "npx expo-doctor --fix || exit 0",
+    "start": "expo start",
+    "start:clean": "expo start -c",
+    "web": "expo start --web"
   },
-  "dependencies": {
-    "expo": "^53.0.0",
-    "react": "18.2.0",
-    "react-native": "0.73.4",
-    "expo-router": "^3.0.0",
-    "react-native-gesture-handler": "~2.12.0",
-    "react-native-reanimated": "~3.12.0",
-    "react-native-screens": "~3.29.0",
-    "react-native-safe-area-context": "4.8.0",
-    "@expo/vector-icons": "^13.1.0",
-    "expo-document-picker": "^12.4.0",
-    "expo-file-system": "^15.5.0",
-    "react-native-draggable-flatlist": "^4.0.0",
-    "@react-native-community/slider": "^4.2.4",
-    "@tanstack/react-query": "^5.0.0",
-    "axios": "^1.5.0",
-    "axios-mock-adapter": "^1.21.2"
-  },
-  "devDependencies": {
-    "typescript": "^5.4.0",
-    "eslint": "^8.56.0",
-    "prettier": "^3.2.4",
-    "@react-native/metro-config": "^0.81.0",
-    "@types/jest": "^29.5.5",
-    "@types/react": "^18.2.15",
-    "@types/react-native": "^0.73.0",
-    "jest": "^29.6.1",
-    "metro": "^0.81.5",
-    "ts-jest": "^29.1.0"
-  }
-}
+  "version": "1.0.0"
 }

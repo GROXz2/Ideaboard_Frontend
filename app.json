@@ -1,28 +1,12 @@
 {
-  "expo": {
-    "name": "Ideaboard",
-    "slug": "ideaboard",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#F8FAFC"
-    },
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "plugins": [
-      "expo-router"
-    ],
-    "web": {
-      "bundler": "metro"
-    }
-  }
+    "expo":  {
+                 "version":  "1.0.0",
+                 "name":  "IdeaBoard",
+                 "web":  {
+                             "bundler":  "metro"
+                         },
+                 "orientation":  "portrait",
+                 "slug":  "ideaboard",
+                 "scheme":  "ideaboard"
+             }
 }
